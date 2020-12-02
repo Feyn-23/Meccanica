@@ -1,4 +1,4 @@
-Un corpo è in moto, \emph{rispetto ad un sistema di 
+\noindent Un corpo è in moto, \emph{rispetto ad un sistema di 
 riferimento $S$}, quando la sua posizione in $S$ cambia
 nel tempo. Le caratteristiche del moto del \emph{punto materiale}
 sono note se è noto il vettore posizione $\vec{r}$ in funzione del
@@ -20,7 +20,7 @@ continua) il moto può essere descritto attraverso l' \textbf{equazione vettoria
 \]
 L'insieme delle posizioni occupate dal punto nel suo moto è la sua
 \textbf{traiettoria $\gamma$}. Nota la traiettoria $\gamma$, chiamiamo
-con $s$ il numero reale detto ascissa curvilinea, il cui modulo, $|s|$,
+con $s$ il numero reale detto \emph{ascissa curvilinea}, il cui modulo, $|s|$,
 fornisce la lunghezza dell'arco di curva dall'origine scelta alla posizione
 sulla traiettoria del punto P. Introducendo la variabile $s$ possiamo 
 descrivere il moto anche con le seguenti due funzioni:
@@ -43,3 +43,90 @@ dove in un sistema di coordinate cartesiane, $\mathbb{R}^3$:
 \[
    s= s(t) \longrightarrow \text{equazione oraria} 
 \]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     VELOCITA
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection*{Il vettore velocità}
+
+\noindent Si definisce \textbf{velocità media} il vettore:
+\[
+     \vec{v}_m \equiv \frac{\vec{r}(t + \Delta t)-\vec{r}(t)}{\Delta t}    
+\]
+Esso è indipendente dal percorso compiuto dal punto materiale nei vari istanti di tempo ma solo dalla posizione
+inziale e finale.
+Definiamo poi il vettore \textbf{velocità istantanea} nel modo seguente:
+\[
+\vec{v} \equiv \lim_{\Delta t \to 0} \vec{v}_m = \lim_{\Delta t \to 0} \frac{\Delta \vec{r}}{\Delta t}      
+\]
+\[
+\vec{v}(t) \equiv \frac{d \vec{r}(t)}{dt}   
+\]
+Questa è la rappresentazione \emph{intrinseca} della velocità. Considerando due posizioni successive occuppate dal 
+punto lungo la traiettoria $\gamma $, il vettore $\Delta \vec{r}$ ha direzione secante alle due posizioni sulla traiettoria. 
+Quando l'arco di traiettoria $\Delta s$ tende a 0 allora:
+\[
+    \lim_{\Delta s \to 0} \frac{\Delta \vec{r}}{\Delta s} = 1
+\]
+In questa situazione il vettore velocità tende ad assumere direzione tangente alla traiettoria. A questo punto il 
+\textbf{versore tangente} alla curva nel punto P sarà:
+\[
+   \v{u}_t = \lim_{\Delta s \to 0} \frac{\Delta \vec{r}}{\Delta s} = \frac{d \vec{r}}{ds}
+\]
+Questo versore rappresenta la direzione del vettore velocità istantea che può quindi essere riscritta come:
+\[
+    \vec{v}(t) \equiv \frac{d \vec{r}(t)}{dt} = \frac{d\vec{r}}{ds} \frac{ds}{dt} = \frac{ds}{dt} \v{u}
+    = v_s \v{u}_t = \dot{s} \v{u}_t 
+\]
+\[
+ \Norm{v} =  \abs{\frac{ds}{dt} }    \longrightarrow \text{modulo della velocità}
+\]
+La rappresentazione cartesiana della velocità è la seguente:
+\[
+ \vec{v} =  \frac{dx}{dt} \v{i} + \frac{dy}{dt} \v{j} + \frac{dz}{dt} \v{k}    
+\]
+\[
+\vec{v} = \dot{x}\v{i} +  \dot{y}\v{j} +  \dot{z}\v{k}    
+\]
+
+\subsection*{Il vettore accelerazione}
+
+Si definisce \textbf{accelerazione media} il vettore:
+\[
+    \vec{a}_m = \frac{\vec{v}(t + \Delta t)-\vec{v}(t)}{\Delta t}      
+\]
+Il vettore \textbf{accelerazione} istantanea è definito dal limite:
+\[
+    \vec{a} \equiv \lim_{\Delta t \to 0} \vec{a}_m = \lim_{\Delta t \to 0} \frac{\Delta \vec{v}}{\Delta t}      
+\]
+\[
+ \vec{a}(t) = \frac{d \vec{v}}{dt} = \frac{d^2\vec{r}}{dt^2}    
+\]
+In coordinate cartesiane l'accelerazione corrisponde a:
+\[
+    \vec{a} =  \frac{dv_x}{dt} \v{i} + \frac{dv_y}{dt} \v{j} + \frac{dv_z}{dt} \v{k}
+    = \frac{d^2x}{dt^2} \v{i} + \frac{d^2y}{dt^2} \v{j} + \frac{d^2z}{dt^2} \v{k}
+\]
+Dal calcolo di derivazione rispetto alla velocità:
+\[
+    \vec{a} = \frac{d \vec{v}}{dt} = \frac{d}{dt} (v_s \v{u}_t) = \frac{dv_s}{dt}\v{u}_t
+    + \frac{d\v{u}_t}{dt}
+\]
+si nota come l'accelerazione sia composta da due contributi: uno parrallelo a $\v{u}_t$ e uno normale a 
+$\v{u}_t$:
+\[
+ \vec{a} = \vec{a}_t + \vec{a}_n   
+\]
+\[
+ \vec{a}_t = \frac{d^2 s}{dt^2} \v{u}_t \equiv \ddot{s} \v{u}_t \quad (\textbf{accelerazione tangenziale})
+\]
+\[
+    \vec{a}_n = \frac{d\v{u}_t}{dt} = \frac{d\v{u}_t}{ds} \frac{ds}{dt} = \dot{s}\frac{d\v{u}_t}{ds}
+    = \dot{s}\frac{d \varphi}{ds}\v{u}_n = \frac{\dot{s}^2}{\rho}\v{u}_n \quad (\textbf{accelerazione normale})    
+\]
+Gli ultimi due passaggi sono ottenuti derivando il versore $\v{u}_t$ secondo il metodo noto trovando quindi una
+forma che è caratteristica della traiettoria $\gamma$ in esame(vedi moto circolare). \\
+Si deduce quindi che qualsiasi moto con traiettoria curva è \emph{accelerato} dal momento che la componente normale
+dell'accelerazione $\v{a}_n$ non è nulla(come nel caso di un moto rettilineo).
+\subsection*{Moto circolare uniforme}
+\label{cinem: circ-unif}

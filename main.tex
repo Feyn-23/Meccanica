@@ -14,13 +14,13 @@
 \usepackage{indentfirst}
 \usepackage{amsmath}         %pacchetto per linguaggio matematico
 \usepackage{amssymb}         %pacchetto per linguaggio matematico
-\usepackage{amsthm}          %tre stili predefiniti per gli enunciati
+\usepackage{amsthm} 
+\usepackage{physics}         %tre stili predefiniti per gli enunciati
 
 \usepackage{booktabs, caption} %pacchetti per le tabelle
 \usepackage{graphicx} %pacchetto per le figure
 \graphicspath{ {./images/} }
 \usepackage{wrapfig}
-
 %Definisco gli stili per  teoremi, definizioni, ecc
 
 \theoremstyle{definition} %inizializzo definizioni                
@@ -38,9 +38,10 @@
 
 
 
-\renewcommand{\v}[1]{\boldsymbol{\hat{#1}}} %%VERSORE
-\renewcommand{\vec}[1]{\vv{\bm{#1}}}   %%VETTORE BOLD E 
-                                      %%CON ARROW
+\renewcommand{\v}[1]{\boldsymbol{\hat{#1}}} 
+%%VERSORE
+\renewcommand{\vec}[1]{\vv{\bm{#1}}}   
+%%VETTORE BOLD E CON ARROW
 \newcommand{\Norm}[1]{ \left\lVert {\vv{\bm{#1}}} \right\rVert}
 %%%NORMA DI UN VETTORE
 

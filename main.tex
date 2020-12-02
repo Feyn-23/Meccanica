@@ -1,0 +1,43 @@
+%PREAMBULO 
+
+\documentclass[a4paper, titlepage]{report}%definizione obbligatoria tipo di documento con opzioni a scelta
+\usepackage[T1]{fontenc}                %codifica caratteri e font utilizzati
+\usepackage[utf8]{inputenc}             %codifica del protocollo
+\usepackage[english, italian]{babel}    %lingue utilizzate, italiano quella principale perchè l'ultima delle elencate
+
+\usepackage{url}
+\usepackage{emptypage}       %elimina le facciate blank
+\usepackage{hyperref}        %definisce i collegamenti ipertestuali e Web
+\usepackage{indentfirst}
+\usepackage{amsmath}         %pacchetto per linguaggio matematico
+\usepackage{amssymb}         %pacchetto per linguaggio matematico
+\usepackage{amsthm}          %tre stili predefiniti per gli enunciati
+
+\usepackage{booktabs, caption} %pacchetti per le tabelle
+\usepackage{graphicx} %pacchetto per le figure
+\graphicspath{ {./images/} }
+\usepackage{wrapfig}
+
+%Definisco gli stili per  teoremi, definizioni, ecc
+
+\theoremstyle{definition} %inizializzo definizioni                
+\newtheorem{definizione}{Definizione}[chapter]  %[chapter]-->numerazione della def con riferimento al capitolo
+\theoremstyle{plain}
+\newtheorem{teorema}{Teorema}[chapter]
+\theoremstyle{plain}
+\newtheorem{proposizione}{Proposizione}[chapter]
+\theoremstyle{remark}
+\newtheorem*{osservazione}{Osservazione}
+\theoremstyle{remark}
+\newtheorem*{nota}{Nota}
+
+\usepackage[vmargin=2.5cm,hmargin=2cm]{geometry}
+
+\begin{document}
+    
+
+\section{Cinematica}
+    
+       \input{sections/cinematica.tex}
+
+\end{document}

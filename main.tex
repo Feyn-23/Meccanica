@@ -5,6 +5,9 @@
 \usepackage[utf8]{inputenc}             %codifica del protocollo
 \usepackage[english, italian]{babel}    %lingue utilizzate, italiano quella principale perchè l'ultima delle elencate
 
+\usepackage{esvect}
+\usepackage{mathtools}
+\usepackage{bm}
 \usepackage{url}
 \usepackage{emptypage}       %elimina le facciate blank
 \usepackage{hyperref}        %definisce i collegamenti ipertestuali e Web
@@ -33,11 +36,23 @@
 
 \usepackage[vmargin=2.5cm,hmargin=2cm]{geometry}
 
+
+
+\renewcommand{\v}[1]{\boldsymbol{\hat{#1}}} %%VERSORE
+\renewcommand{\vec}[1]{\vv{\bm{#1}}}   %%VETTORE BOLD E 
+                                      %%CON ARROW
+\newcommand{\Norm}[1]{ \left\lVert {\vv{\bm{#1}}} \right\rVert}
+%%%NORMA DI UN VETTORE
+
+
 \begin{document}
     
+\section{Sistemi di riferimento}
+
+    \input{sections/sdr.tex}
 
 \section{Cinematica}
     
-       \input{sections/cinematica.tex}
+    \input{sections/cinematica.tex}
 
 \end{document}

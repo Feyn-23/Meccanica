@@ -79,7 +79,7 @@ Questo versore rappresenta la direzione del vettore velocità istantea che può 
     = v_s \v{u}_t = \dot{s} \v{u}_t 
 \]
 \[
- \Norm{v} =  \abs{\frac{ds}{dt} }    \longrightarrow \text{modulo della velocità}
+ v_s =  \frac{ds}{dt}     \longrightarrow \text{modulo della velocità}
 \]
 La rappresentazione cartesiana della velocità è la seguente:
 \[
@@ -120,26 +120,80 @@ $\v{u}_t$:
  \vec{a} = \vec{a}_t + \vec{a}_n   
 \]
 \[
- \vec{a}_t = \frac{d^2 s}{dt^2} \v{u}_t \equiv \ddot{s} \v{u}_t \quad (\textbf{accelerazione tangenziale})
+ \vec{a}_t = \frac{d^2 s}{dt^2} \v{u}_t \equiv \ddot{s} \v{u}_t \qquad (\textbf{accelerazione tangenziale})
 \]
 \[
     \vec{a}_n = \frac{d\v{u}_t}{dt} = \frac{d\v{u}_t}{ds} \frac{ds}{dt} = \dot{s}\frac{d\v{u}_t}{ds}
     = \dot{s}\frac{d \varphi}{ds}\v{u}_n = \frac{\dot{s}^2}{\rho}\v{u}_n \quad (\textbf{accelerazione normale})    
 \]
+dove $\rho$ è il raggio della \emph{circonferenza osculatrice}, ovvero la circonferenza che approssima localmente il 
+moto di un punto materiale, $\v{u}_n$ è il versore $\perp$ a $\v{u}_n$. 
 Gli ultimi due passaggi sono ottenuti derivando il versore $\v{u}_t$ secondo il metodo noto trovando quindi una
-forma che è caratteristica della traiettoria $\gamma$ in esame(vedi moto circolare). \\
+forma che è caratteristica della traiettoria $\gamma$ in esame. \\
 Si deduce quindi che qualsiasi moto con traiettoria curva è \emph{accelerato} dal momento che la componente normale
-dell'accelerazione $\v{a}_n$ non è nulla(come nel caso di un moto rettilineo).
-
-
-
-
+dell'accelerazione $\v{a}_n$ non è nulla(come nel caso di un moto rettilineo $\longrightarrow \rho = cost$).
 
 
 %%%%%%%%%%%%%%%%%%%
 %%%MOTI%%%%%%%
 %%%%%%%%%%%%%%%%%%
-\subsection*{Moto rettilineo uniforme}
-\subsection*{Moto rettilineo uniformemente accelerato}
-\subsection*{Moto circolare uniforme}
+I moti piu elementari di cui è nota la traiettoria $\gamma$ possono essere descritti tramite le due equazioni:
+\[
+  \begin{cases}
+      \vec{v} = \dot{s}\v{u}_t \\ 
+      \vec{a} = \ddot{s}\v{u}_t + \frac{\dot{s}^2}{\rho}\v{u}_n
+  \end{cases}  
+\]
+
+
+
+
+
+
+
+
+\subsection*{Moti elementari: moto rettilineo uniforme}
+Determinare  l'equazione del moto significa conoscendo le espressioni di  velocità e accelerazione e nota la traiettoria 
+$\gamma $ significa risolvere il \emph{problema inverso} della cinematica.
+In un moto rettilineo uniforme il punto materiale percorre spazi uguale in tempi uguali: si ha $\dot{s}(t) = \dot{s}_0
+\equiv v_0 = cost$. \\
+Per determinare l'espressione di $s(t)$:
+\[
+s(t) = \int \dot{s} dt = \dot{s}_0 \int dt = \dot{s}_0 t + C = v_0 t + C
+\]
+Sapendo quanto vale $s(t_0)= s_0$ si ha che la \textbf{legge oraria} è :
+\[
+   s = \dot{s_0}t + s_0 = v_0 t + s_0    
+\]
+In coordinate cartesiane:
+\[
+  \vec{v} = v_0 \v{i}     
+\]
+Dato che il moto avviene solo su un asse, la legge oraria è:
+\[
+  x(t) = v_0 t + x_0    
+\]
+L'accelerazione in ogni istante $\vec{a}(t) = 0$. 
+
+
+
+
+\subsection*{Moti elementari: moto rettilineo uniformemente accelerato}
+
+Questo tipo di moto è caratterizzato da un'accelerazione costante ovvero $\ddot{s}(t)
+= \frac{d\dot{s}}{dt} \equiv a(t) = cost$. \\
+Attraverso l'integrazione come per il moto rettilineo uniforme, e preso $t(0)= 0$:
+\[
+  \dot{s}= \ddot{s}_0t + \dot{s}_0    
+\]
+si ottiene l'equazione differenziale che descrive il cambiamento nel tempo della 
+velocità che, risolta, fornisce l'espressione della funzione di $s(t)$:
+\[
+s(t) = \frac{1}{2}\ddot{s_0}t^2 + \dot{s_0}t + s_0f    
+\]
+
+
+
+
+\subsection*{Moto elementare: moto circolare uniforme}
 \label{cinem: circ-unif}

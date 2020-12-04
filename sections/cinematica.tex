@@ -215,13 +215,98 @@ che descrivono il moto sono:
 \]
 
 
-\subsection*{Moti elementare: moto circolare}
+\subsection*{Moti elementari: moto circolare}
 \label{cinem: circ-unif}
-La traiettoria di un moto circolare coincide con una circonferenza, che sappiamo avere 
-equazione del tipo:
+Descrivendo la traiettoria di un moto circolare una circonferenza, questa avrà 
+un'equazione del tipo:
 \[
   x^2 + y^2 = R^2    
 \] 
-Fissando un sistema di riferimento ottimale a questa situazione, ovvero quello con origine
-nel centro della traiettoria circolare e coincidente con il piano della circonferenza, cioè
-un piano $xy$ con $z=0$ 
+Fissando un sistema di riferimento ottimale a questa situazione, ovvero un sistema
+cartesiano rappresentante il piano $xy$ con $z=0$ con origine nel centro della traiettoria
+circolare. Vi è una relazione fissa tra arco di circonfernza $s$ percorso e l'angolo $\theta$
+relativo:
+\[
+s = r \cdot \theta     
+\]
+Nel caso moto circolare uniforme, la condizione di uniformità consiste nel fatto che il punto
+materiale percorre angoli uguali in tempi uguali ovvero:
+\[
+   \dot{\theta} = cost  
+\]
+In particolare questa costante è definita \textbf{velocità angolare} del punto materiale:
+\[
+ \omega \equiv \frac{d \theta}{dt} = cost 
+\]
+e, essendo costante, vale in ogni punto la relazione $\theta = \omega t$.\\
+Considerando il \textbf{periodo $T$} di rotazione, ovvero il tempo necessario per percorrere un giro completo
+della traiettoria(ritornando al punto di partenza), la velocità angolare vale:
+\[
+   \omega = \frac{2 \pi}{T}  
+\]
+Sapendo che la frequenza $f$ è l'inverso del periodo, $f \equiv \frac{1}{T}$ allora:
+\[
+    \omega = 2 \pi f    
+\]
+A questo punto possiamo definire l'\textbf{accelerazione angolare} del punto come:
+\[
+   \alpha \equiv \ddot{\theta} \equiv \frac{d\omega}{dt}     
+\]
+La condizione di uniformità può essere rappresentata con $\alpha = 0$ in quanto ciò è equivalente a 
+$\omega = cost$. 
+Durante il moto il vettore direzione $\vec{r}$ ha modulo costante coincidente con il raggio 
+$R$ e direzione data dal versore radiale $\v{u}_r$:
+\[
+ \vec{r} = r \v{u}_r = r cos \theta \v{i} + r sin \theta \v{j} = r cos (\omega t) \v{i} +
+ r sin (\omega t) \v{j}    
+\]
+Andiamo a definire il vettore velocità $\vec{v}$:
+\[
+    \vec{v} \equiv \frac{d \vec{r}}{dt} = 
+    \begin{cases}
+        \frac{dx}{dt} = -r \omega sin (\omega t) \\
+        \frac{dy}{dt} = r \omega cos (\omega t) 
+    \end{cases}
+\]
+\[
+ \vec{v} = r \omega(-sin(\omega t)\v{i} +cos (\omega t)\v{j}) 
+\]
+Il versore che definisce la direzione di $\vec{v}$ è:
+\[
+   \v{u}_{\theta} \equiv \frac{\vec{v}}{\Norm{v}} = \frac{\vec{v}}{r \omega} =  
+   -sin(\omega t)\v{i} +cos (\omega t)\v{j}   
+\]
+Da qui si ricava un'importante risultato, ovvero il fatto che la velocità è sempre tangente alla traiettoria,
+è quindi una \textbf{velocità tangenziale}. Ciò è dimostrato dalla perpendicolarità di $\v{u}_r$ e $\v{u}_{\theta}$
+in ogni punto:
+\[
+    \v{u}_r \cdot \v{u}_{\theta} = -cos(\omega t)sin (\omega t) + cos(\omega t)sin (\omega t) = 0
+\]
+Introducendo il vettore $\vec{\omega} = \omega \v{k}$ (uscente dal piano) che ha il modulo della velocità
+angolare posso definire intrinsecamente il vettore velocità nei moti circolari:
+\[
+\vec{v}(t) = \vec{\omega}(t) \cross \vec{r}(t)    
+\]
+Andiamo a questo punto a trovare l'espressione del vettore accelerazione:
+\[
+\vec{a} \equiv \frac{d \vec{v}}{dt} = 
+\vec{v} \equiv \frac{d \vec{r}}{dt} = 
+\begin{cases}
+    \frac{dv_x}{dt} = -r \omega^2 cos (\omega t) \\
+    \frac{dv_y}{dt} = -r \omega^2 sin (\omega t) 
+\end{cases}
+\]
+\[
+   \vec{a} = -r \omega^2(cos(\omega t)\v{i} +sin (\omega t)\v{j}) 
+\]
+\[
+   \vec{a} = -r \omega^2 \, \v{u}_r    
+\]
+Da cui notiamo che l'accelerazione ha verso opposto a quello del versore radiale e quindi è una 
+\textbf{accelerazione centripeta}. \\
+Sfruttando la definizione intrinseca di velocità attraveso un semplice calcolo, sfruttando il teorema
+del prodotto triplo, si arriva alla definzione intrinseca di accelerazione in un moto circolare:
+\[
+  \vec{a} =\underbrace{\alpha \cdot r \cdot \v{u}_{\theta} }_{\text{tangenziale}}- \underbrace{\omega^2 
+  \cdot r \cdot \v{u}_r}_{\text{centripeta}}    
+\]

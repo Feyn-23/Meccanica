@@ -1,0 +1,56 @@
+
+\subsection*{Derivate di vettori e versori }
+\[
+     \v{v} \equiv \frac{\vec{v}}{\Norm{v}}
+\]
+\emph{Derivata di un versore} (da mettere in sezione apposita)
+Definendo un vettore $\omega = \v{u} \cross \v{n}$ con modulo $\frac{d \varphi}{dt}$
+\[
+ \frac{d\v{u}}{dt} = \frac{d \varphi}{dt} \v{n} = \vec{\omega} \cross \v{u}     
+\]
+
+\subsection*{Coordinate polari piane}
+Un sistema di riferimento di coordinate polari piane è un sistema di coordinate 
+caratterizzato da un \textbf{polo}, l'origine O, e da un \textbf{asse polare},
+la semiretta orientata uscente da O. La direzione di ogni punto P è caratterizzata
+da due versori:
+\[
+ \v{u}_r \quad (\text{versore radiale}) \qquad \text{e} \qquad \v{u}_{\theta}
+ \quad  \text{(versore trasverso)}     
+\]
+con $\v{u}_r$ indicante la direzione del vettore direzione $\vec{r}$, che infatti si 
+scrive come $\vec{r} = r \, \v{u}_r$, e con $\v{u}_{\theta}$ versore tangente alla 
+circonferenza e diretto verso angoli $\theta$ crescenti ($\v{u}_r \perp \v{u}_{\theta}$).\\
+Nel caso in cui la direzione dell'asse polare
+sia quella del versore $\v{i}$ allora la relazione tra le coordinate polari piane (r, $\theta$)
+e quelle cartesiane ($x,y$) è il seguente:
+\[
+\begin{cases}
+     x = r cos \theta \\
+     y = r sin \theta
+\end{cases}
+; \qquad
+\begin{cases}
+     r = \sqrt{x^2 + y^2} \\
+     \theta = arctan \frac{y}{x}
+\end{cases}     
+\]
+e tra i versori polari e cartesiani:
+\[
+\begin{cases}
+     \v{u}_r = (\v{u}_r \cdot \v{i})\v{i} + (\v{u}_r \cdot \v{j})\v{j} =
+     cos \theta\v{i} + sin \theta \v{j} \\
+     \v{u}_{\theta}= (\v{u}_{\theta} \cdot \v{i})\v{i} + (\v{u}_{\theta} \cdot \v{j})\v{j} =
+     -sin \theta \v{i} + cos \theta \v{j}
+\end{cases}     
+\]
+Il vettore direzione $\vec{r} = \v{u}_r$ in relazione alle coordinate cartesiane:
+\[
+     \vec{r} = r cos \theta \v{i} + r sin \theta \v{j}     
+\]
+Mentre il vettore $\vec{\varphi}$ sempre tangente alla curva con direzione $\v{u}_{\theta}$
+(in un moto circolare corrisponde alla velocità tangenziale): 
+\[
+    \vec{\varphi} = - \varphi sin \theta + \varphi cos \theta     
+\]
+\subsection*{Coordinate polari sferiche}

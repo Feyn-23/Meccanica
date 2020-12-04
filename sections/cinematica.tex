@@ -189,11 +189,39 @@ Attraverso l'integrazione come per il moto rettilineo uniforme, e preso $t(0)= 0
 si ottiene l'equazione differenziale che descrive il cambiamento nel tempo della 
 velocità che, risolta, fornisce l'espressione della funzione di $s(t)$:
 \[
-s(t) = \frac{1}{2}\ddot{s_0}t^2 + \dot{s_0}t + s_0f    
+s = \frac{1}{2}\ddot{s_0}t^2 + \dot{s_0}t + s_0f    
+\]
+Nel caso in cui $t_0 \neq 0$ risolvendo il sistema dato dalle due relazioni precedenti considerando 
+un tempo $(t-t_0)$:
+\[
+\begin{cases}
+
+    \dot{s}= \ddot{s}_0(t-t_0) + \dot{s}_0    \\
+    s = \frac{1}{2}\ddot{s_0}(t-t_0)^2 + \dot{s_0}(t-t_0) + s_0   
+
+\end{cases}    
+\]
+si ottiene l'utile relazione:
+\[
+v^2 = {v_0}^2 + 2 \ddot{s_0}(s-s_0) \equiv {v_0}^2 + 2 a_t(s-s_0)   
+\]
+Analogamente all'altro moto rettilineo trattato, il moto avviene solo su un asse, quindi le leggi
+che descrivono il moto sono:
+\[
+    x(t) = \frac{1}{2}a_0t^2 + v_0t + x_0   \qquad \textbf{(legge oraria)}
+\]
+\[
+   \dot{x}(t) = a_0t + v_0 \quad \textbf{(variazione di velocità)}
 \]
 
 
-
-
-\subsection*{Moto elementare: moto circolare uniforme}
+\subsection*{Moti elementare: moto circolare}
 \label{cinem: circ-unif}
+La traiettoria di un moto circolare coincide con una circonferenza, che sappiamo avere 
+equazione del tipo:
+\[
+  x^2 + y^2 = R^2    
+\] 
+Fissando un sistema di riferimento ottimale a questa situazione, ovvero quello con origine
+nel centro della traiettoria circolare e coincidente con il piano della circonferenza, cioè
+un piano $xy$ con $z=0$ 

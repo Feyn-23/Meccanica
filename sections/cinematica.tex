@@ -282,7 +282,7 @@ in ogni punto:
 \[
     \v{u}_r \cdot \v{u}_{\theta} = -cos(\omega t)sin (\omega t) + cos(\omega t)sin (\omega t) = 0
 \]
-Introducendo il vettore $\vec{\omega} = \omega \v{k}$ (uscente dal piano) che ha il modulo della velocità
+Introducendo il vettore $\vec{\omega} = \omega \cdot \v{k}$ (uscente dal piano) che ha il modulo della velocità
 angolare posso definire intrinsecamente il vettore velocità nei moti circolari:
 \[
 \vec{v}(t) = \vec{\omega}(t) \cross \vec{r}(t)    
@@ -303,10 +303,66 @@ Andiamo a questo punto a trovare l'espressione del vettore accelerazione:
    \vec{a} = -r \omega^2 \, \v{u}_r    
 \]
 Da cui notiamo che l'accelerazione ha verso opposto a quello del versore radiale e quindi è una 
-\textbf{accelerazione centripeta}. \\
+\textbf{accelerazione centripeta} che in un moto uniforme vale:
+\[
+   \vec{a} = -\frac{v_0^2}{R}\v{u}_r \quad \text{oppure se scelgo il versore normale}  \quad
+   \vec{a} = \frac{v_0^2}{R}\v{u}_n
+\]
 Sfruttando la definizione intrinseca di velocità attraveso un semplice calcolo, sfruttando il teorema
 del prodotto triplo, si arriva alla definzione intrinseca di accelerazione in un moto circolare:
 \[
   \vec{a} =\underbrace{\alpha \cdot r \cdot \v{u}_{\theta} }_{\text{tangenziale}}- \underbrace{\omega^2 
   \cdot r \cdot \v{u}_r}_{\text{centripeta}}    
+\]
+Se il moto circolare è uniforme($\alpha = 0$) allora $\vec{a} = - \omega^2 \vec{r}$, quindi permane
+solo la componente centripeta. 
+
+Nel caso di un moto circolare \textbf{non uniforme} riassiumiamo le grandezze in questione:
+\\ \emph{Vettore direzione}:
+\[
+    \vec{r}(t) =
+   \begin{cases}
+       r cos \theta(t) \\
+       r sin \theta(t)
+   \end{cases}    
+   \qquad \text{dove $\theta(t)$ è una funzione non lineare}
+\]
+\emph{Velocità angolare e accelerazione angolare:}
+\[
+\omega \equiv \dot{\theta}(t) \neq cost    
+\]
+\[
+ \alpha \equiv \ddot{\theta}(t) \neq 0    
+\]
+\emph{Velocità}:
+\[
+ \vec{v}(t) = \vec{\omega}(t) \cross \vec{r}(t) \qquad \text{dove $\vec{\omega}(t)=\omega(t) \cdot \v{k}
+ = \dot{\theta}(t) \cdot \v{k}$} \quad \text{intrinseca}   
+\]
+\[
+ \vec{v}(t) = 
+ \begin{cases}
+   \dot{x} =  -r sin \theta (t) \cdot \dot{\theta} \\
+    \dot{y} = \ r cos \theta (t) \cdot \dot{\theta}
+ \end{cases}    
+ \qquad \text{cartesiana}
+\]
+\[
+\vec{v}(t)= r \cdot \omega(t) \v{u}_{\theta}
+\qquad \text{in coordinate polari}
+\]
+\emph{Accelerazione}:
+\[
+    \vec{a} = \alpha  \cdot r  \v{u}_{\theta} - \omega^2 \cdot r  \v{u}_r    \qquad \text{intrinseca} 
+\]
+\[
+    \vec{a}(t) = 
+    \begin{cases}
+      \ddot{x} =  -r(cos \theta (t) \cdot \dot{\theta}^2 +sin \theta(t) \cdot \ddot{\theta} )\\
+       \ddot{y} = r(-sin \theta (t) \cdot \dot{\theta}^2 +cos \theta(t) \cdot \ddot{\theta} )
+    \end{cases}    
+    \qquad \text{cartesiana}    
+\]
+\[
+\vec{a}(t) = r \omega^2 (\v{k} \cross \v{u}_{\theta})  \qquad \text{in coordinate polari} 
 \]

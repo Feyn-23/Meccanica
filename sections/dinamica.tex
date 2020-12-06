@@ -1,0 +1,123 @@
+Esistono due categorie principali di forze
+\begin{itemize}
+    \item Le forze di contatto
+    \item Le forze con azione a distanza(per esempio la forza centrale)
+\end{itemize}
+\textbf{TRASFORMAZIONI DI GALILEO} \\
+Considerando due sistemi di riferimento, $S $ ed $S'$ in cui il secondo ha un moto 
+di \emph{traslazione rettilinea uniforme} rispetto al primo, il vettore posizione e i principali
+vettori cinematici si trasformano nel modo seguente:
+\[
+\begin{cases}
+     \vec{r} = \vec{r}' + \vec{V}'  t' \\
+     t = t'
+\end{cases} 
+\qquad 
+\begin{cases}
+     \vec{v} = \vec{v}' + \vec{V} \\
+     \vec{a} = \vec{a}'
+\end{cases}    
+\]
+Da queste trasformazioni si deduce che la velocità non è invariante e dipende dal sistema di 
+riferimento:essa varia secondo la classica legge di composzione della velocità. \\
+Al contrario l'accelerazione è invariante. \\
+Il principio Galileiano afferma, quindi, che non è possibile distinguere due fenomeni fisici. 
+
+Per quanto riguarda le leggi di Newton queste hanno come contesto di validità quello dei sistemi di
+riferimento \textbf{inerziali}, altrimenti devono subire delle modifiche.
+Per verificare che un sistema di riferimento è inerziale bisogna individuare almeno un \emph{corpo
+libero}, ovvero isolato, non soggetto a forze esterne, oppure tale che la risultante agente su
+questo sia nulla: se questo corpo è in quiete oppure si muove con velocità costante(in un moto rettilineo)
+allora quello in esame è un sistema di riferimento inerziale.
+Una volta assicurata l'esistenza di un sistema di riferimento inerziale allora si può affermare l'esistenza
+di infiniti sistemi di riferimento di questo tipo in quanto, grazie al principio di relatività galileaiana,
+è noto che qualsiasi sistema $S'$ che stia traslando rispetto ad $S$ a velocità costante ed in linea retta
+costituisce un nuovo sistema di riferimento inerziale.
+
+\begin{legge}[Prima Legge della dinamica]
+    Esiste almeno un sistema di riferimento (inerziale) rispetto al quale ogni punto 
+    materiale libero ha velocità costante
+\end{legge}
+La prima legge della dinamica assicura l'esistenza non solo di un sistema di riferimento 
+in cui un corpo inizialmente in quiete resta in quiete, ma di infiniti sistemi, ottenuti
+attraverso una traslazione
+
+
+\begin{legge}[Seconda legge della dinamica]
+    In un sistema di riferimento inerziale , l'accelerazione di un corpo è sempre dovuta all'azione
+    di forze; tra forza risultante ed accelerazione sussiste, in ogni istante, la relazione
+    \[
+        \vec{F}(t) = m \vec{a}(t)     
+    \]
+
+    
+\end{legge}
+
+
+\textbf{IL PENDOLO SEMPLICE} \\
+Si tratta di un punto materiale di massa $m$ attaccato ad un sostegno rigido tramite un filo \emph{insestensibile}
+e di massa trascurabile, di lunghezza $l$. Viene poi trascurato ogni attrito dovuto all'aria o al filo. \\
+Le forze in gioco sono le seguenti:
+\[
+ \vec{F}_p + \vec{R} = m \vec{a}    
+\]
+Il sistema che descrive le relazioni scalari delle forze in gioco:
+\[
+\begin{cases}
+    -mg sin\theta = m \ddot{s} \\
+    -mg cos \theta + R = m \frac{\dot{s}^2}{L}
+\end{cases}    
+\]
+Utilizzando il fatto che $\theta = \frac{s}{L}$ la prima equazione 
+diventa:
+\[
+\ddot{s} + g sin(\frac{s}{L}) = 0    
+\]
+Essendo questa un'equazione differenziale trascendente senza soluzione
+analitica, operiamo l'approssimazione 
+\[
+    sin(\frac{s}{L}) \approx \frac{s}{L}
+\]
+sviluppando la serie di Taylor al primo ordine(la percentuale di errore 
+è molto piccola per angoli piccoli). A questo punto si ottiene l'equazione
+\[
+    \ddot{s} + \frac{g}{L}s = 0
+\]
+che è la nota equazione del moto oscillatorio armonico con legge oraria:
+\[
+    s(t) = Acos (\omega_0 t + \varphi_0)
+\]
+e di pulsazione e periodo:
+\[
+ \omega_0 = \sqrt{\frac{g}{L}}   \qquad 
+ T = \frac{2 \pi}{\omega_0} = 2\pi \sqrt{\frac{L}{g}} 
+\]
+La legge orari
+\subsection*{Applicazione delle leggi della dinamica}
+\textbf{LE FORZE ELASTICHE} \\
+Le forze esercitate dalle molle sono un'esempio di forze che dipendono solo dalla posizione. Nel caso
+di una molla ideale si ha che la forza di richiamo agisce solo sull'asse della molla, in verso
+ opposto alla deformazione di questa ed è proporzionale all'allungamento.
+Ciò viene descritto attraverso la relazione empirica seguente.
+\begin{legge}[Legge di Hooke]
+    \[
+    \vec{F} = -kx \, \v{i}
+    \]
+\end{legge} 
+Analizziamo il moto di una molla ideale. \\
+Applicando il secondo principio della dinamica:
+\[
+  m \ddot{x} = -\frac{k}{m} x    
+\]
+Dalla risoluzione dell'equazione differenziale caratterizzante il moto oscillatorio armonico si ha:
+\[
+x(t) = x_0 cos(\omega_0 t + \varphi_0)    
+\]
+da cui:
+\[
+ \ddot{x}(t) = - \omega^2 x_0 cos(\omega_0 t)    
+\]
+Da cui si ottiene:
+\[
+  \omega_0 = \sqrt{\frac{k}{m}}    
+\]

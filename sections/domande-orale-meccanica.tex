@@ -1,0 +1,73 @@
+\section*{DOMANDE ORALE DI MECCANICA}
+
+\subsection*{Gravitazione}
+\begin{itemize}
+
+    \item Esperimento di Cavendish con il pendolo di torsione per misurare la costante gravitazionale
+    \item Dimostazione della seconda legge di Keplero con la dinamica Newtoniana ($\frac{dA}{dt}= cost$)
+    \item Calcolo, attraverso la definizione di lavoro, della funzione energia potenziale di una forza 
+    conservativa(per esempio la forza gravitazionale $U(r) = -G\frac{Mm}{r}$
+    \item Descrizione del sistema a due corpi in coordinate polari e potenziale efficace: 
+    \[
+    \vec{v} = \dot{r} \v{r} + r \dot{\varphi} \v{\varphi}    
+    \]
+    \[
+    \vec{L} = \vec{r} \cross \mu \vec{v} = \mu r^2 \dot{\varphi} \v{k}  
+    \]
+    \[
+    U_{\text{eff}} = \frac{L^2}{2 \mu r^2} - G \frac{Mm}{r}    
+    \]
+
+\end{itemize}
+\subsection*{Dinamica}
+\begin{itemize}
+    \item Calcolo del periodo di un pendolo semplice \\
+    Le forze in gioco sono le seguenti:
+    \[
+     \vec{F}_p + \vec{R} = m \vec{a}    
+    \]
+    Il sistema che descrive le relazioni scalari delle forze in gioco:
+    \[
+    \begin{cases}
+        -mg sin\theta = m \ddot{s} \\
+        -mg cos \theta + R = m \frac{\dot{s}^2}{L}
+    \end{cases}    
+    \]
+    Utilizzando il fatto che $\theta = \frac{s}{L}$ la prima equazione 
+    diventa:
+    \[
+    \ddot{s} + g sin(\frac{s}{L}) = 0    
+    \]
+    Essendo questa un'equazione differenziale trascendente senza soluzione
+    analitica, operiamo l'approssimazione 
+    \[
+        sin(\frac{s}{L}) \approx \frac{s}{L}
+    \]
+    sviluppando la serie di Taylor al primo ordine(la percentuale di errore 
+    è molto piccola per angoli piccoli). A questo punto si ottiene l'equazione
+    \[
+        \ddot{s} + \frac{g}{L}s = 0
+    \]
+    che è la nota equazione del moto oscillatorio armonico con legge oraria:
+    \[
+        s(t) = Acos (\omega_0 t + \varphi_0)
+    \]
+    e di pulsazione e periodo:
+    \[
+     \omega_0 = \sqrt{\frac{g}{L}}   \qquad 
+     T = \frac{2 \pi}{\omega_0} = 2\pi \sqrt{\frac{L}{g}} 
+    \]
+
+
+
+    \item Esaminare la dinamica di un corpo dal punto di vista del sistema di riferimento del 
+    centro di massa
+
+\end{itemize}
+
+\subsection*{Corpi rigidi}
+\begin{itemize}
+    \item Dimostrazione della formula del momento angolare per un corpo rigido con
+    simmetria rotazionale ($L= I \omega$)
+\end{itemize}
+
